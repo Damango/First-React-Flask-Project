@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def api():
     return{
         'userID': 1,
@@ -11,6 +11,20 @@ def api():
         'currentWeight': 155
 
     }
+
+
+
+@app.route('/test', methods=['GET'])
+def testApi():
+    return{
+        'userID':69,
+        'username': "Spooby Looby",
+        'currentWeight': 255
+    }
+
+
+
+
 
 
 

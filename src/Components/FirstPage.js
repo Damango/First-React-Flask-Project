@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import "./FirstPage.css"
 
-const FirstPage = () => {
+const FirstPage = (props) => {
 
     const [initialData, setInitialData] = useState()
 
@@ -17,10 +18,12 @@ const FirstPage = () => {
 
 
 
-    return (<div>
+    return (<div className="test-page">
 
-        <button onClick={buttonTest}>Click Me</button>
-        <div>{JSON.stringify(initialData)}</div>
+
+        <div>User ID: {JSON.stringify(props.data.userID)}</div>
+        <div>Current Weight: {JSON.stringify(props.dataa.currentWeight)}</div>
+        <div>User Name: {JSON.stringify(props.data.username)}</div>
     </div>);
 }
 

@@ -22,7 +22,7 @@ const FirstPage = (props) => {
 
 
         <div>User ID: {JSON.stringify(props.data.userID)}</div>
-        <div>Current Weight: {JSON.stringify(props.dataa.currentWeight)}</div>
+        <div>Current Weight: {JSON.stringify(props.data.currentWeight)}</div>
         <div>User Name: {JSON.stringify(props.data.username)}</div>
     </div>);
 }

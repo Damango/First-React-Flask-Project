@@ -15,11 +15,13 @@ function App() {
 
 
 
+
   return (
     <div className="App">
 
       <button onClick={buttonTest}>Click Me</button>
-      {data.map((stuff) => <FirstPage data={stuff} />)}
+      {data.map((things) => <FirstPage data={things} />)}
+
 
     </div>
   );

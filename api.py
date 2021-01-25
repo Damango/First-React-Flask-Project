@@ -16,11 +16,11 @@ def api():
 
 @app.route('/test', methods=['GET'])
 def testApi():
-    return[{
+    return{
         'userID':69,
         'username': "Spooby Looby",
         'currentWeight': 255
-    }]
+    }
 
 
 

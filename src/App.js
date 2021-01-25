@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState([])
 
   function buttonTest() {
-    fetch('/test').then(response => response.json()).then(data => setData(data))
+    //fetch('/test').then(response => response.json()).then(data => setData(data))
   }
 
 
@@ -20,8 +20,9 @@ function App() {
     <div className="App">
 
       <button onClick={buttonTest}>Click Me</button>
-      {data.map((things) => <FirstPage data={things} />)}
 
+
+      <FirstPage data={data} />
 
     </div>
   );

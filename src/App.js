@@ -8,8 +8,15 @@ function App() {
   const [data, setData] = useState([])
 
   function buttonTest() {
-    //fetch('/test').then(response => response.json()).then(data => setData(data))
+    fetch('/test').then(response => response.json()).then(data => setData(data))
   }
+
+  function complexTest() {
+    fetch('/test2').then(response => response.json()).then(data => setData(data))
+  }
+
+
+
 
 
 
@@ -19,7 +26,8 @@ function App() {
   return (
     <div className="App">
 
-      <button onClick={buttonTest}>Click Me</button>
+      <button onClick={complexTest}>Click Me</button>
+
 
 
       <FirstPage data={data} />
